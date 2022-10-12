@@ -23,4 +23,9 @@ public class Sample31Controller {
     return "sample31.html";
   }
 
+  @GetMapping("step3")
+  public String sample33(){
+    return "sample33.html";
+  }
+
 }
