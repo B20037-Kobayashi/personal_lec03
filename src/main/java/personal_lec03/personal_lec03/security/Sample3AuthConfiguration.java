@@ -41,7 +41,7 @@ public class Sample3AuthConfiguration {
 
     // mvcMatchers().authenticated()がmvcMatchersに指定されたアクセス先に認証処理が必要であることを示す
     http.authorizeHttpRequests()
-        .mvcMatchers("/").authenticated();
+        .mvcMatchers("/sample3/*").authenticated();
 
     // ログアウト時は "http://localhost:8000/" に戻る
     http.logout().logoutSuccessUrl("/");
