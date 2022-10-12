@@ -12,6 +12,12 @@
   <div sec:authentication="name"></div>
   ロール名：
   <div sec:authentication="principal.authorities"></div>
+  <div sec:authorize="hasRole('ROLE_ADMIN')">
+    <span>あなたは管理者ですね</span>
+  </div>
+  <div sec:authorize="hasRole('ROLE_USER')">
+    <span>あなたはユーザですね</span>
+  </div>
 </body>
 
 </html>

@@ -28,7 +28,7 @@ public class Sample3AuthConfiguration {
     UserDetails admin = users
         .username("admin")
         .password("$2y$10$rjQPITJKlse3gjgeiwFpeO6UO5bK4zEmnvWQpYW33TYbpa3Lp0Fom")
-        .roles("admin")
+        .roles("ADMIN")
         .build();
     // 生成したユーザをImMemoryUserDetailsManagerに渡す
     return new InMemoryUserDetailsManager(user1, admin);
